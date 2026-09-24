@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerd was here</title>
+</head>
+<body>
+    <h1>Gerd was here</h1>
+
+    <script>
+        const popUpUrl = "https://google.com"; 
+
+        window.addEventListener("load", () => {
+            // Tilfeldig plassering på skjermen
+            const x = Math.floor(Math.random() * (screen.width - 800));
+            const y = Math.floor(Math.random() * (screen.height - 600));
+
+            // Åpner et stort vindu (800x600 piksler) med dine koordinater
+            window.open(popUpUrl, "_blank", `width=800,height=600,left=${x},top=${y}`);
+        });
+    </script>
+</body>
+</html>
